@@ -1,8 +1,17 @@
 const play_pause_btn = document.getElementById("play_pause");
 const video = document.querySelector(".video");
-const timeline = document.querySelector(".timeline")
+// const timeline = document.querySelector(".timeline")
 const timelineRed = document.querySelector(".timelineRed");
 const timer = document.querySelector(".timer");
+const progress = document.getElementById("progress")
+progress.addEventListener("change", () => {
+    timelineRed.style.width = +progress.value + "%";
+    video.currentTime = (+progress.value * video.duration) / 100
+
+
+})
+
+
 
 play_pause_btn.addEventListener("click", () => {
     if (video.paused) {
@@ -20,6 +29,6 @@ video.addEventListener("timeupdate", () => {
 
 })
 
-timeline.addEventListener("click", (e) => {
-    console.log(e.offsetX)
-})
+// timeline.addEventListener("click", (e) => {
+//     console.log(e.offsetX, )
+// })
