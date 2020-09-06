@@ -41,13 +41,23 @@
     top: 0;
     left: 0;
     border: 2px solid turquoise;
+    cursor: pointer;
 }
 
 .buttongroup {
     padding: 10px;
+    display: flex;
+    border: 2px solid red;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.buttongroup button:before {
+button {
+    width: 50px;
+}
+
+
+/* .buttongroup button:before {
     content: "\f144";
     font-family: "Font Awesome 5 Free";
     width: 25px;
@@ -55,6 +65,17 @@
     font-size: 28px;
     color: #fff;
     display: inline-block
+} */
+
+.timer {
+    width: 100px;
+    height: 30px;
+    border: 2px solid red;
+    margin-left: 10px;
+    color: red;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
 }
 
 .timelineRed {
