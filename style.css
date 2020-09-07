@@ -70,17 +70,6 @@ input {
     cursor: pointer;
 }
 
-
-/* .buttongroup button:before {
-    content: "\f144";
-    font-family: "Font Awesome 5 Free";
-    width: 25px;
-    height: 25px;
-    font-size: 28px;
-    color: #fff;
-    display: inline-block
-} */
-
 .timer {
     width: 100px;
     height: 30px;

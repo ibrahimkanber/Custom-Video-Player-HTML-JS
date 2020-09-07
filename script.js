@@ -16,8 +16,11 @@ progress.addEventListener("change", () => {
 play_pause_btn.addEventListener("click", () => {
     if (video.paused) {
         video.play();
+        play_pause_btn.innerHTML = '<i class="fa fa-play fa-2x"></i>'
+
     } else {
         video.pause();
+        play_pause_btn.innerHTML = '<i class="fa fa-stop fa-2x"></i>'
     }
 })
 
