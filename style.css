@@ -1,16 +1,24 @@
+
+
+
 .maincontainer {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: rgba(81, 197, 191, 0.4);
+    background-image: url("https://media.giphy.com/media/9bTjZrytydVRK/source.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .videoContainer {
-    width: 100%;
-    border: 2px solid red;
+    width: 80%;
+    border: 2px solid black;
     position: relative;
     overflow: hidden;
+    border-right-color: violet;
+    border-left-color: violet;
+    border-top-color: seagreen;
 }
 
 .video {
@@ -23,7 +31,7 @@
     width: 100%;
     bottom: 0;
     position: absolute;
-    border: 4px solid blue;
+   
     background: rgba(0, 0, 0, 0.7);
     transform: translateY(100%) translateY(-15px);
     transition: all 0.35s;
@@ -44,10 +52,6 @@
     cursor: pointer;
 }
 
-input {
-    width: 100%;
-    background-color: red;
-}
 
 .buttongroup {
     padding: 10px;
@@ -63,7 +67,7 @@ button {
 
 input {
     visibility: visible;
-    z-index: 1;
+    /* z-index: 1; */
     position: relative;
     opacity: 0;
     bottom: 18px;
